@@ -8,6 +8,9 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./modules/systemPackages.nix
+      ./modules/fonts.nix
+      ./modules/programs.nix
     ];
 
   # Use the GRUB 2 boot loader.
@@ -62,23 +65,6 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-
-  # List packages installed in system profile.
-  # You can use https://search.nixos.org/ to find more packages (and options).
-  environment.systemPackages = with pkgs; [
-    vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    git
-    xwayland-satellite
-    firefox
-  ];
-
-  fonts.packages = with pkgs; [
-    nerd-fonts.jetbrains-mono
-  ];
-
-  programs.niri.enable = true;
-  programs.dms-shell.enable = true;
-  programs.foot.enable = true;
 
   hardware.graphics.enable = true;
 
