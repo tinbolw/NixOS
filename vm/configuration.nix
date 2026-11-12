@@ -69,12 +69,16 @@
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
     git
     xwayland-satellite
-    waybar
-    alacritty
     firefox
   ];
 
+  fonts.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+  ];
+
   programs.niri.enable = true;
+  programs.dms-shell.enable = true;
+  programs.foot.enable = true;
 
   hardware.graphics.enable = true;
 
