@@ -6,7 +6,7 @@
 
 {
   programs.niri.enable = true;
-  programs.dms-shell.enable = true;
+  programs.dux-shell.enable = true;
   programs.foot.enable = true;
   programs.fish.enable = true;
 }
