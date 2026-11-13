@@ -9,5 +9,8 @@
     xwayland-satellite
     firefox
     fastfetch
+    chezmoi
+    zoxide
+    keychain
   ];
 }
