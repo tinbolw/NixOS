@@ -7,7 +7,6 @@
     vim
     git
     xwayland-satellite
-    firefox
     fastfetch
     chezmoi
     zoxide
