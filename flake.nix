@@ -10,6 +10,14 @@
           ./modules/systemPackages.nix
         ];
       };
+      nixos = nixpkgs.lib.nixosSystem {
+        modules = [
+          ./hosts/nixos/configuration.nix
+          ./modules/fonts.nix
+          ./modules/programs.nix
+          ./modules/systemPackages.nix
+        ];
+      };
     };
   };
 }
