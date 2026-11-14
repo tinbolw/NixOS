@@ -12,5 +12,6 @@
     zoxide
     keychain
     bitwarden-desktop
+    firefox
   ];
 }
