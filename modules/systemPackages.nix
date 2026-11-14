@@ -7,11 +7,6 @@
     vim
     git
     xwayland-satellite
-    fastfetch
-    chezmoi
-    zoxide
-    keychain
-    bitwarden-desktop
     firefox
   ];
 }
