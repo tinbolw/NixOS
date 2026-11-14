@@ -26,7 +26,7 @@
         inherit system;
         specialArgs = { inherit pkgs-unstable; };
         modules = [
-          ./hosts/nixos-vm/configuration.nix
+          ./hosts/nixos/nixos-vm/configuration.nix
           ./modules/fonts.nix
           ./modules/programs.nix
           ./modules/systemPackages.nix
@@ -45,7 +45,7 @@
         inherit system;
         specialArgs = { inherit pkgs-unstable; };
         modules = [
-          ./hosts/nixos/configuration.nix
+          ./hosts/nixos/nixos/configuration.nix
           ./modules/fonts.nix
           ./modules/programs.nix
           ./modules/systemPackages.nix

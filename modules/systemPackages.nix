@@ -11,5 +11,6 @@
     chezmoi
     zoxide
     keychain
+    bitwarden-desktop
   ];
 }
