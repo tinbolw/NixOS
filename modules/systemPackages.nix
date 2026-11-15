@@ -6,7 +6,9 @@
   environment.systemPackages = with pkgs; [
     vim
     git
+    # for niri
     xwayland-satellite
     firefox
+    nixfmt-tree
   ];
 }
