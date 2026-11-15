@@ -18,9 +18,7 @@
         specialArgs = { inherit pkgs-unstable; };
         modules = [
           ./hosts/nixos/nixos-vm/configuration.nix
-          ./modules/fonts.nix
-          ./modules/programs.nix
-          ./modules/systemPackages.nix
+          ./modules
         ]; 
       };
       nixos = nixpkgs.lib.nixosSystem {
@@ -28,9 +26,7 @@
         specialArgs = { inherit pkgs-unstable; };
         modules = [
           ./hosts/nixos/nixos/configuration.nix
-          ./modules/fonts.nix
-          ./modules/programs.nix
-          ./modules/systemPackages.nix
+          ./modules
         ];
       };
     };
