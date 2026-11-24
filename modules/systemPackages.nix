@@ -9,6 +9,7 @@
     # for niri
     xwayland-satellite
     firefox
+    nautilus
     nixfmt-tree
   ];
 }

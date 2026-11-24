@@ -45,4 +45,8 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  # Trash for Nautilus
+  services.gvfs.enable = true;
+  # Automount external drives for Nautilus
+  services.udisks2.enable = true;
 }
