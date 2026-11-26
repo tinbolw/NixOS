@@ -43,11 +43,19 @@
   #   enable = true;
   #   enableSSHSupport = true;
   # };
+  programs.f5vpn-uw = {
+    enable = true;
+    users = [ "tinbolw" ];
+  };
 
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+  services.openssh.enable = true;
+  users.users."tinbolw".openssh.authorizedKeys.keys = [
+    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFdIRJmisyXDytJJARK5svrb7J/fpf/eCMYG7pg2Y+mY tinbolw@theearth
+"
+  ];
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
