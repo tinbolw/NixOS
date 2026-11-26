@@ -8,6 +8,7 @@
   imports = [
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
+    ../../../modules/f5vpn-uw
   ];
 
   # Use the GRUB 2 boot loader.
