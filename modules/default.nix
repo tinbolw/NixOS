@@ -49,4 +49,6 @@
   services.gvfs.enable = true;
   # Automount external drives for Nautilus
   services.udisks2.enable = true;
+
+  nix.settings.auto-optimise-store = true;
 }
